@@ -21,7 +21,7 @@ const PORT = 8000;
 app.post("/completion", async (req, res) => {
   try {
     const url = " https://api.openai.com/v1/chat/completions";
-    const API_KEY = "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";
+    const API_KEY = api;
     const response = await fetch(url, {
       method: "POST",
       headers: {
